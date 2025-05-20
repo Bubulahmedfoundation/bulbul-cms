@@ -8,6 +8,14 @@
     <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js"></script>
   </head>
   <body>
+    <!-- 🔧 This is the container Netlify CMS needs -->
     <div id="nc-root"></div>
+
+    <!-- 🔁 This script kicks off the CMS manually -->
+    <script>
+      if (window.CMS_MANUAL_INIT) {
+        NetlifyCms.init();
+      }
+    </script>
   </body>
 </html>
